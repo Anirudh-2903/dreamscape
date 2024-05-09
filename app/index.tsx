@@ -1,6 +1,7 @@
 import {  Text, View } from "react-native";
 import {StatusBar} from 'expo-status-bar';
 import { Link } from "expo-router";
+import { useFonts } from 'expo-font';
 
 export default function App() {
   return (
