@@ -14,7 +14,7 @@ const SignIn = () => {
   return (
     <SafeAreaView className='bg-primary h-full'>
       <ScrollView>
-        <View className='w-full justify-center h-full px-4 my-6'>
+        <View className='w-full justify-center min-h-[83vh] px-4 my-6'>
           <Image source={images.logo} className='w-[300px] h-[100px]' resizeMode='contain' />
           <Text className='text-2xl text-white text-semibold mt-10 font-psemibold'>Log in to Dreamscape</Text>
           <FormField
@@ -28,8 +28,8 @@ const SignIn = () => {
           <FormField
             title='Password'
             placeholder='Enter your password'
-            value={form.email}
-            handleChangeText={(e) => setForm({ ...form, email: e })}
+            value={form.password}
+            handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles='mt-7'
           />
           <CustomButton title='Sign In' handlePress={submit} containerStyles='mt-7' isLoading={isSubmitting} />
