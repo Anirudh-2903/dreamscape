@@ -5,9 +5,12 @@ import { useFonts } from 'expo-font';
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../constants";
 import CustomButton from "@/components/CustomButton";
+import { useGlobalContext } from "@/context/GlobalProvider";
 
 
-export default function App() {
+export default function Welcome() {
+  const {isLoggedIn,isLoading} = useGlobalContext();
+  if(!isLoading && isLoggedIn) return <Redirect href="/home" />
   return (
     <SafeAreaView className="bg-primary h-full" style={{flex: 1}}>
       <ScrollView contentContainerStyle={{height: '100%'}}>

@@ -3,7 +3,7 @@ import React, { useEffect } from "react"
 import { Slot, SplashScreen, Stack } from "expo-router"
 import Animated from "react-native-reanimated"
 import { useFonts } from "expo-font"
-import { GlobalProvider } from "@/context/GlobalProvider"
+import  GlobalProvider from "@/context/GlobalProvider"
 
 SplashScreen.preventAutoHideAsync()
 
@@ -44,4 +44,4 @@ const RootLayout = () => {
   )
 }
 
-export default RootLayout
+export default RootLayout;

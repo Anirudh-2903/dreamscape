@@ -34,4 +34,6 @@ const GlobalProvider = ({ children }) => {
             {children}
         </GlobalContext.Provider>
     );
-}
+};
+
+export default GlobalProvider;
