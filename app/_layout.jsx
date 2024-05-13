@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, { useEffect } from 'react'
-import { Slot, SplashScreen, Stack } from 'expo-router'
-import Animated from 'react-native-reanimated';
-import { useFonts } from 'expo-font';
+import { StyleSheet, Text, View } from "react-native"
+import React, { useEffect } from "react"
+import { Slot, SplashScreen, Stack } from "expo-router"
+import Animated from "react-native-reanimated"
+import { useFonts } from "expo-font"
+import { GlobalProvider } from "@/context/GlobalProvider"
 
-SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync()
 
 const RootLayout = () => {
   const [fontsLoaded, error] = useFonts({
-    "Poppins-Black": require('../assets/fonts/Poppins-Black.ttf'),
+    "Poppins-Black": require("../assets/fonts/Poppins-Black.ttf"),
     "Poppins-Bold": require("../assets/fonts/Poppins-Bold.ttf"),
     "Poppins-ExtraBold": require("../assets/fonts/Poppins-ExtraBold.ttf"),
     "Poppins-ExtraLight": require("../assets/fonts/Poppins-ExtraLight.ttf"),
@@ -17,27 +18,29 @@ const RootLayout = () => {
     "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
     "Poppins-SemiBold": require("../assets/fonts/Poppins-SemiBold.ttf"),
     "Poppins-Thin": require("../assets/fonts/Poppins-Thin.ttf"),
-  });
+  })
 
   useEffect(() => {
-    if (error) throw error;
+    if (error) throw error
 
     if (fontsLoaded) {
-      SplashScreen.hideAsync();
+      SplashScreen.hideAsync()
     }
-  }, [fontsLoaded, error]);
+  }, [fontsLoaded, error])
 
   if (!fontsLoaded && !error) {
-    return null;
+    return null
   }
 
   return (
-    <Stack>
-      <Stack.Screen name='index' options={{ headerShown: false }} />
-      <Stack.Screen name='(auth)' options={{ headerShown: false }} />
-      <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
-      <Stack.Screen name='/search/[query]' options={{ headerShown: false }} />
-    </Stack>
+    <GlobalProvider>
+      <Stack>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        {/* <Stack.Screen name='/search/[query]' options={{ headerShown: false }} /> */}
+      </Stack>
+    </GlobalProvider>
   )
 }
 
