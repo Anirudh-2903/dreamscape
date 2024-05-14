@@ -52,10 +52,10 @@ const Home = () => {
                 />
               </View>
             </View>
-            <SearchInput placeholder="Search for a video topic"/>
+            <SearchInput />
             <View className="w-full flex-1 pt-5 pb-8">
-              <Text className="text-gray-100 text-lg mb-3 font-pregular">Latest Videos</Text>
-              <Trending posts={latestVideos ?? []} />
+              <Text className="text-gray-100 text-lg mb-3 font-pregular">Trending Videos</Text>
+              <Trending videos={latestVideos ?? []} />
             </View>
           </View>
         )}
