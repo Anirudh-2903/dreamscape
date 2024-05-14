@@ -6,7 +6,7 @@ import SearchInput from "@/components/SearchInput"
 import Trending from "@/components/Trending"
 import EmptyState from "@/components/EmptyState"
 import { useGlobalContext } from "@/context/GlobalProvider"
-import { getAllVideos } from "@/lib/appwrite"
+import { getAllVideos, getLatestVideos } from "@/lib/appwrite"
 import useAppwrite from "@/lib/useAppwrite"
 import VideoCard from "@/components/VideoCard"
 
@@ -16,6 +16,7 @@ const Home = () => {
   const [refreshing, setRefreshing] = useState(false)
 
   const { data: videos, refetch } = useAppwrite(getAllVideos);
+  const { data: latestVideos } = useAppwrite(getLatestVideos);
 
   const onRefresh = async () => {
     setRefreshing(true)
@@ -54,18 +55,7 @@ const Home = () => {
             <SearchInput placeholder="Search for a video topic"/>
             <View className="w-full flex-1 pt-5 pb-8">
               <Text className="text-gray-100 text-lg mb-3 font-pregular">Latest Videos</Text>
-              <Trending posts={[
-                { $id: "1", id: "A" },
-                { $id: "2", id: "B" },
-                { $id: "3", id: "C" },
-                { $id: "4", id: "D" },
-                { $id: "5", id: "E" },
-                { $id: "6", id: "F" },
-                { $id: "7", id: "G" },
-                { $id: "8", id: "H" },
-                { $id: "9", id: "I" },
-                { $id: "10", id: "J" },
-              ]} />
+              <Trending posts={latestVideos ?? []} />
             </View>
           </View>
         )}
