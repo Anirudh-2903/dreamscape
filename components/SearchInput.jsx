@@ -4,9 +4,9 @@ import { TouchableOpacity } from "react-native"
 import { icons } from "@/constants"
 import { router, usePathname } from "expo-router"
 
-const SearchInput = () => {
+const SearchInput = ({ initialQuery }) => {
   const pathname = usePathname()
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState(initialQuery || "")
 
 
   return (
@@ -20,7 +20,7 @@ const SearchInput = () => {
       />
       <TouchableOpacity onPress={() => {
         if(!query) return Alert.alert("Missing Topic","Please enter a search topic")
-            
+
         if(pathname === "/search") return router.setParams({ query })
         else router.push(`/search/${query}`)
       }}>

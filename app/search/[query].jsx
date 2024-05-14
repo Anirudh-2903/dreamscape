@@ -1,9 +1,7 @@
-import { View, Text, FlatList, Image, StatusBar, Alert } from "react-native"
-import React, { useEffect, useState } from "react"
+import { View, Text, FlatList, StatusBar } from "react-native"
+import React, { useEffect } from "react"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { images } from "@/constants"
 import SearchInput from "@/components/SearchInput"
-import Trending from "@/components/Trending"
 import EmptyState from "@/components/EmptyState"
 import { searchVideos } from "@/lib/appwrite"
 import useAppwrite from "@/lib/useAppwrite"
@@ -13,7 +11,7 @@ import { useLocalSearchParams } from "expo-router"
 const Search = () => {
   const { query } = useLocalSearchParams()
 
-  const { data: videos, refetch } = useAppwrite(searchVideos(query))
+  const { data: videos, refetch } = useAppwrite(() => searchVideos(query))
 
   useEffect(() => {
     refetch()
@@ -26,24 +24,18 @@ const Search = () => {
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => <VideoCard video={item} />}
         ListHeaderComponent={() => (
-          <View className="my-6 px-4 space-y-6">
-            <View className="justify-between items-start flex-row mb-6">
-              <View>
-                <Text className="font-pmedium text-sm text-gray-100">
-                  Search Results
-                </Text>
-                <Text className="text-2xl text-white font-psemibold">
-                  {query}
-                </Text>
-                <SearchInput />
-              </View>
+          <View className="my-6 px-4">
+            <Text className="font-pmedium text-sm text-gray-100">Search Results</Text>
+            <Text className="text-2xl text-white font-psemibold">{query}</Text>
+            <View className="mt-6 mb-8">
+              <SearchInput initialQuery={query} />
             </View>
           </View>
         )}
         ListEmptyComponent={() => (
           <EmptyState
             title="No Videos Found"
-            subtitle="Oops! No videos have been created yet"
+            subtitle="Oops! No videos found for this search topic"
           />
         )}
       />
