@@ -18,7 +18,7 @@ import { router } from "expo-router"
 
 const Profile = () => {
   const { user, setUser, setIsLoggedIn } = useGlobalContext()
-  const createdAt = new Date(user.$createdAt).toLocaleDateString("en-gb", {
+  const createdAt = new Date(user?.$createdAt).toLocaleDateString("en-gb", {
     year: "numeric",
     month: "long",
     day: "numeric",
