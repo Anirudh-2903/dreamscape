@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+<div align="center">
+  <br />
+    <a href="https://youtu.be/ZBCUegTZF7M?si=ubt0vk70lSjt6DCs" target="_blank">
+      <img src="https://i.postimg.cc/5NR9bxFM/Sora-README.png" alt="Project Banner">
+    </a>
+  <br />
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+  <div>
+    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
+    <img src="https://img.shields.io/badge/NativeWind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="nativewind" />
+  </div>
 
-## Get started
+  <h3 align="center">Video Sharing App</h3>
 
-1. Install dependencies
+   <div align="center">
+     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+    </div>
+</div>
 
-   ```bash
-   npm install
-   ```
+## 📋 <a name="table">Table of Contents</a>
 
-2. Start the app
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
-   ```bash
-    npx expo start
-   ```
+## 🚨 Tutorial
 
-In the output, you'll find options to open the app in a
+This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<a href="https://youtu.be/ZBCUegTZF7M?si=ubt0vk70lSjt6DCs" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
-## Get a fresh project
+## <a name="introduction">🤖 Introduction</a>
 
-When you're ready, run:
+Built with React Native for seamless user experiences, Animatable for captivating animations, and integrated with the dependable backend systems of Appwrite,
+this app showcases impressive design and functionality, enabling seamless sharing of AI videos within the community.
+
+If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
+
+<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- React Native
+- Expo
+- Nativewind
+- Animatable
+- Appwrite
+
+## <a name="features">🔋 Features</a>
+
+👉 **Onboarding Screen**: Engaging graphics and clear instructions welcome users to the app.
+
+👉 **Robust Authentication & Authorization System**: Secure email login safeguards user accounts.
+
+👉 **Dynamic Home Screen with Animated Flat List**: Smoothly animated flat list showcases the latest videos for seamless browsing.
+
+👉 **Pull-to-Refresh Functionality**: Users can refresh content with a simple pull gesture for up-to-date information.
+
+👉 **Full-Text Search Capability**: Efficiently search through videos with real-time suggestions and instant results.
+
+👉 **Tab Navigation**: Navigate between sections like Home, Search, and Profile with ease using tab navigation.
+
+👉 **Post Creation Screen for Uploading Media**: Upload video and image posts directly from the app with integrated media selection.
+
+👉 **Profile Screen with Detailed Insights**: View account details and activity, including uploaded videos and follower count, for a personalized experience.
+
+👉 **Responsiveness**: Smooth performance and adaptability across various devices and screen sizes for a consistent user experience.
+
+👉 **Animations**: Dynamic animations using the Animatable library to enhance user interaction and engagement throughout the app's UI.
+
+and many more, including code architecture and reusability
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
 
 ```bash
-npm run reset-project
+git clone https://github.com/adrianhajdin/aora.git
+cd aora
+```
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Running the Project**
 
-## Learn more
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+**Expo Go**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Download the [Expo Go](https://expo.dev/go) app onto your device, then use it to scan the QR code from Terminal and run.
