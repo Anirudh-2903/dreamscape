@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://github.com/Anirudh-2903/dreamscape/blob/master/onboarding.jpeg" alt="Project Banner" width="40%" height="40%">
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/onboarding.jpeg" alt="Project Banner" width="50%" height="50%">
   <br />
 
   <div>
@@ -20,6 +20,12 @@
 4. 🤸 [Quick Start](#quick-start)
 
 ## <a name="introduction">🤖 Introduction</a>
+
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/onboarding.jpeg" alt="onboarding" width="50%" height="50%">
+  <br />
+</div>
 
 Unleash Your Dreams with Dreamscape: Your AI Video Hub
 
@@ -47,19 +53,61 @@ Built with cutting-edge tech:
 
 👉 **Onboarding Screen**: Engaging graphics and clear instructions welcome users to the app.
 
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/onboarding.jpeg" alt="onboarding" width="50%" height="50%">
+  <br />
+</div>
+
 👉 **Robust Authentication & Authorization System**: Secure email login safeguards user accounts.
 
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/sign_up.jpeg" alt="sign_up" width="50%" height="50%">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/sign_in.jpeg" alt="sign_in" width="50%" height="50%">
+  <br />
+</div>
+
 👉 **Dynamic Home Screen with Animated Flat List**: Smoothly animated flat list showcases the latest videos for seamless browsing.
+
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/homepage.jpeg" alt="homepage" width="50%" height="50%">
+  <br />
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/videos.jpeg" alt="videos" width="50%" height="50%">
+  <br />
+</div>
+
+👉 **Tab Navigation**: Navigate between sections like Home, Create and Profile with ease using tab navigation.
 
 👉 **Pull-to-Refresh Functionality**: Users can refresh content with a simple pull gesture for up-to-date information.
 
 👉 **Full-Text Search Capability**: Efficiently search through videos with real-time suggestions and instant results.
 
-👉 **Tab Navigation**: Navigate between sections like Home, Search, and Profile with ease using tab navigation.
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/search_results.jpeg" alt="search_results" width="50%" height="50%">
+  <br />
+</div>
 
 👉 **Post Creation Screen for Uploading Media**: Upload video and image posts directly from the app with integrated media selection.
 
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/create_post.jpeg" alt="create_post" width="50%" height="50%">
+  <br />
+</div>
+
 👉 **Profile Screen with Detailed Insights**: View account details and activity, including uploaded videos and follower count, for a personalized experience.
+
+<div align="center">
+  <br />
+      <img src="https://github.com/Anirudh-2903/Project-Images/blob/master/Dreamscape/profile.jpeg" alt="profile" width="50%" height="50%">
+  <br />
+</div>
 
 👉 **Responsiveness**: Smooth performance and adaptability across various devices and screen sizes for a consistent user experience.
 
